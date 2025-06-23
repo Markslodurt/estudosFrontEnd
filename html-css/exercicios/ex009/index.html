@@ -10,7 +10,7 @@
 
     <h2>Listas Ordenadas</h2>
     <p>A ordem faz diferença.</p>
-    <ol type="I"> <!-- existem 5 tipos de ordenção nessa lista: Númerica, Letras maiúsculas, Letras minúsculas, Números romanos maiúsculos e Números romanos minúsculos-->
+    <ol type=""> <!-- existem 5 tipos de ordenção nessa lista: Númerica, Letras maiúsculas, Letras minúsculas, Números romanos maiúsculos e Números romanos minúsculos-->
         <li>Acordar</li>
         <li>Ligar para João</li>
         <li>Tomar café</li>
@@ -33,5 +33,34 @@
         <li>Arroz</li>
         <li>Feijão</li>
     </ul>
+
+    <h2>Listas dentro Listas (aninhamento)</h2>
+    <!-- É possível criar lista dentro de itens de outra lista. Isto  se chama aninhamento.-->
+     
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Duvet - boa</li>
+            <li>Maybe don´t leave me - Billie Eilish</li>
+            <li>Preciso me encontrar - Cartola</li>
+        </ol>
+
+        <li>Novas</li>
+        <ol type="a"> 
+            <li>Wildflower - Billie Eilish</li>
+            <li>A pearl - Mitski</li>
+            <li>Vanish into you - Lady Gaga</li>
+        </ol>
+    </ol>
+
+    <!-- Usando o atributo start=" " dentro da tag da lista, você define por qual número ou letra a lista deve começar. Ele recebe apenas valor número, que corresponde a posição na sequÊncia.-->
+
+    <h2>Lista de Definição</h2>
+    <dl> <!-- uma lista de termos e suas respectivas descrições. -->
+        <dt>HTML</dt> <!--Define o termo -->
+        <dd>Linguagem de marcação para a criação de conteúdo de um site.</dd> <!-- Define a descrição do termo -->
+        <dt>CSS</dt>
+        <dd>Liguagem de marcação para a criação de um site.</dd>
+    </dl>
 </body>
 </html>
