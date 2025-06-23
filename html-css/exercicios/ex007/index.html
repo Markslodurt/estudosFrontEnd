@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica e obsolescência de tags e atributos</title>
+</head>
+<body>
+    <h1>Semântica e obsolescência de tags e atributos</h1>
+    <h2>Antes, o HTML era focado na forma e aparência.</h2>
+
+    <p>- Por exemplo, quando se tratava de um endereço, apenas faziam ele se parecer com um endereço colocando sublinhado, assim:</p>
+    <p><u>Rua Cauby, 124 - Fortaleza, CE</u></p>
+    <p>&#8265;&#65039; O problema: &lt;u&gt; só dizia para "sublinhar", mas não dizia que aquilo era um endereço. Um leitor de tela, por exemplo, não saberia interpretar esse conteúdo como um endereço real.</p>
+
+    <p>- No HTML moderno, usamos a tag semântica &lt;address&gt;, que diz o significado daquele conteúdo: um endereço.</p>
+    <address>Rua Cauby, 124 - Fortaleza, CE</address>
+    <p>&#128161;Agora o navegador, leitores de tela e motores de busca sabem que isso é um endereço, e podem tratá-lo de forma especial (como sugerir abrir no mapa, por exemplo).</p>
+</body>
+</html>
