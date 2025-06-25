@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor.</p>
+
+    <video src="midia/meuVideo.mp4" width="500px" controls poster="imagens/capaVideo.jpeg" loop></video>
+
+    <!-- 
+        Tag video, usada para inserir videos;
+         Atributo src, aponta o arquivo;
+         Atributo width, diz a largura do video na tela;
+         Atributo controls. mostra o player e controles adjacentes;
+         Atributo poster, indicar a imagem que servirá de capa para o video.
+    -->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/huFlkk9o-DM?si=gz07cKZqzfsVaAWh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!--
+    A tag <iframe> serve para incorporar outro conteúdo dentro da página, como se fosse uma janela (frame) dentro do site.
+    -->
+    
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/457111349" width="500" height="355" frameborder="0" allow="autoplay; fullscreen"></iframe>
+</body>
+</html>
