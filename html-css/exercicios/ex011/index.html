@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p><a href="pag002.html" rel="next">- Outra forma -</a></p>
+
+       <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <!--a tag picture serve para exibir imagens adaptaveis, ela trabalha junto com a tag source que usando o atributo media="max-width" ele vai usar tal imagem dependendo da largura da tela. O atributo srcset serve para indicar o arquivo de imagem que deve ser usado se a condição do media for verdadeira-->
+
+    <!-- Então, é como se o source fizesse testes para a responsividade da tela. -->
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Aprendendo a reproduzir áudios em HTML5</p>
+    <audio src="midia/Ocean Eyes.mp3" controls></audio>
+
+    <!-- A tag audio permite inserir arquivo de audio. O atributo src é onde vai o arquivo. O atributo controls exibe os controles do player de áudio. -->
+</body>
+</html>
