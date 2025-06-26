@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* @charset "UTF-8"; garante que o documento possam exibir corretamente todos os caracteres, incluindo aqueles de outros idiomas e símbolos, tornando sua página web mais acessível e consistente. */ 
+
+body {
+    background-color: rgb(38, 38, 38);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1 {
+    color: rgb(123, 0, 238);
+}
+h2 {
+    color: rgb(154, 113, 192);
+}
+p {
+    color: white;
+    text-align: justify;
+}
+
+a {
+    color: rgb(237, 34, 255);
+}
