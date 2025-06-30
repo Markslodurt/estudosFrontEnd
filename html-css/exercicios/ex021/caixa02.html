@@ -10,26 +10,29 @@
         color: white;
         margin: 0px;
       }
-      
-      header{
+
+      header {
         background-color: #56529d;
         padding: 10px;
         margin: 10px;
       }
-      nav{
+      nav {
         background-color: #9b97d9;
         padding: 3px;
+        box-shadow: 5px 3px 7px #00000040;
+        text-align: center;
       }
-      nav > a{
+      nav > a {
         text-decoration: none;
-        color: orange;
+        color: rgb(155, 233, 255);
         font-weight: bold;
         margin-right: 30px;
       }
-      nav > a:hover{
+      nav > a:hover {
         text-decoration: underline;
+        color: #adff15;
       }
-      main{
+      main {
         background-color: #56529d;
         padding: 10px;
         margin: 10px;
@@ -38,14 +41,16 @@
         background-color: #6f6cae;
         padding: 5px;
       }
-      article > aside{
+      article > aside {
         background-color: #4d4a8e;
       }
-      footer{
+      footer {
         background-color: #252345;
         text-align: center;
-        padding: 1px;
-        
+        padding: 4px;
+      }
+      footer > p{
+        margin: 0px;
       }
     </style>
   </head>
@@ -61,23 +66,26 @@
       </nav>
     </header>
     <main>
-        <section id="assuntos">
-            <p>Esportes Política Tecnologia</p>
-        </section>
+      <section id="assuntos">
+        <p>Esportes Política Tecnologia</p>
+      </section>
 
-        <section id="noticias">
-            <article>
-                <h2>Notícia sobre o Brasil</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptate dicta? Id adipisci, itaque explicabo tempore quasi delectus corporis, iste perferendis cupiditate molestiae deleniti excepturi beatae voluptatem, earum quia quos?</p>
-                <aside>
-                    <p>Escrito por Fulano da Silva</p>
-                </aside>
-            </article>
+      <section id="noticias">
+        <article>
+          <h2>Notícia sobre o Brasil</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+            voluptate dicta? Id adipisci, itaque explicabo tempore quasi
+            delectus corporis, iste perferendis cupiditate molestiae deleniti
+            excepturi beatae voluptatem, earum quia quos?
+          </p>
+          <aside>
+            <p>Escrito por Fulano da Silva</p>
+          </aside>
+        </article>
 
-            <article>
-
-            </article>
-        </section>
+        <article></article>
+      </section>
     </main>
     <footer>
       <p>Desenvolvido por Marcos Duarte</p>
