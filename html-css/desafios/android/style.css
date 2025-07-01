@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'IDroid';
+  src: url('fontes/idroid.otf') format('opentype');
+}
+
+/* BASE */
+
+body{
+    background-color: rgb(229, 237, 243);
+    margin: 0;
+}
+
+body a{
+    text-decoration: none;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    /* o conteúdo ocupa toda a tela em dispositivos menores. */
+    width: 100%;
+    /* mas em dispositivos maiores, ele vai ter uma largura máxima, para não ficar tão grande. */
+    max-width: 900px;
+}
+
+main h1, h2{
+    margin: 0;
+    font-family: 'IDroid';
+    color: #134338;
+    text-align: justify;
+}
+
+main h2{
+    background-image: linear-gradient( to right, #16f98b69, #ffffff45);
+}
+
+main p{
+    text-indent: 20px;
+}
+
+main section iframe, 
+main section img{
+    /* O text-align não tava funcionando, então eu resolvi trasformar as imagens em blocos para ela ocuparem todo o espaço disponível. Então, coloco elas no meio usando margin 0 auto */
+    display: block;
+    margin: 0 auto;
+}
+
+/* CABEÇALHO */
+
+body > header{
+    background-image: linear-gradient(to bottom, #16f98a, #134338);
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+header p{
+    margin: 10px 0 0 0;
+}
+
+/* NAVEGAÇÃO */
+
+nav{
+    height: 30px;
+    background-color: #134338;
+    /* Display flex e align-items para alinhar o conteúdo no centro, na vertical. */
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li{
+      padding: 0 15px;
+}
+
+nav a{
+    color: white;
+}
+
+
+/* SEÇÃO DO VÍDEO */
+
+main #destaque-video{
+    background-color: #134338;
+    padding: 35px 0;
+}
+
+/* SEÇÃO EXTRA */
+
+main #extra{
+    background-color: #c5ffe3;
+    border-radius: 15px;
+    padding-bottom: 8px;
+    /* Entre as seções, achei mais convêniente usar as margens dos paragrafos para separar as seções. Como a última seção não tem parágrafos que façam essa separação, irei usar o margin top */
+    margin-top: 16px;
+}
+
+main #extra ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+
+}
+
+main #extra ul li::before{
+    content: '✔️ ';
+}
+
+main #extra ul a{
+    color: black;
+}
+
+main #extra p{
+    padding: 0 13px 0;
+}
+
+main #extra header{
+    background-color: #79cba3;
+    padding: 13px;
+    /* Arrendondei as bordas porque como o header tava escapando da section, as bordas redondas dela não estavam aparecendo. */
+    border-radius: 15px 15px 0 0;
+}
+
+main #extra header h3{
+    margin: 0;
+}
+
+/* RODAPÉ */
+
+body footer{
+    background-color: #134338;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+body footer p{
+    margin: 0;
+    color: #79cba3;
+}
+
+body footer a{
+    color: #a3ffea;
+    font-weight: bold;
+}
+
