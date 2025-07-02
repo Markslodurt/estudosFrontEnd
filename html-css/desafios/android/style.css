@@ -6,6 +6,12 @@
 
 /* BASE */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgb(229, 237, 243);
     margin: 0;
@@ -18,18 +24,19 @@ body a{
 main{
     background-color: white;
     padding: 20px;
-    margin: auto;
+    margin: 0 auto 30px;
+    border-radius: 0 0 10px 10px;
     /* o conteúdo ocupa toda a tela em dispositivos menores. */
     width: 100%;
     /* mas em dispositivos maiores, ele vai ter uma largura máxima, para não ficar tão grande. */
-    max-width: 900px;
+    max-width: 1000px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.368);
 }
 
 main h1, h2{
     margin: 0;
     font-family: 'IDroid';
     color: #134338;
-    text-align: justify;
 }
 
 main h2{
@@ -47,27 +54,42 @@ main section img{
     margin: 0 auto;
 }
 
+main section img{
+    width: 100%;
+}
+
+main section .pequena{
+    width: 50%;
+}
+
 /* CABEÇALHO */
 
 body > header{
     background-image: linear-gradient(to bottom, #16f98a, #134338);
+    min-height: 150px;
     color: aliceblue;
     text-align: center;
     padding: 20px;
+    box-sizing: border-box;
 }
 
-header p{
-    margin: 10px 0 0 0;
+body header > h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    
 }
+
 
 /* NAVEGAÇÃO */
 
 nav{
-    height: 30px;
     background-color: #134338;
     /* Display flex e align-items para alinhar o conteúdo no centro, na vertical. */
     display: flex;
     align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.203);
+    padding: 10px;
 }
 
 nav ul{
@@ -75,15 +97,20 @@ nav ul{
     margin: 0;
     padding: 0;
     display: flex;
+    
 }
 
-nav li{
-      padding: 0 15px;
-}
+
 
 nav a{
     color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition-duration: 1s;
 }
+
+nav a:hover {
+    background-color: #1c6151;
 
 
 /* SEÇÃO DO VÍDEO */
@@ -95,7 +122,7 @@ main #destaque-video{
 
 /* SEÇÃO EXTRA */
 
-main #extra{
+main aside{
     background-color: #c5ffe3;
     border-radius: 15px;
     padding-bottom: 8px;
@@ -103,33 +130,28 @@ main #extra{
     margin-top: 16px;
 }
 
-main #extra ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+main aside ul{
+    columns: 2;
     list-style: none;
 
 }
 
-main #extra ul li::before{
+main aside ul li::before{
     content: '✔️ ';
 }
 
-main #extra ul a{
-    color: black;
-}
-
-main #extra p{
+main aside p{
     padding: 0 13px 0;
 }
 
-main #extra header{
+main aside header{
     background-color: #79cba3;
     padding: 13px;
     /* Arrendondei as bordas porque como o header tava escapando da section, as bordas redondas dela não estavam aparecendo. */
     border-radius: 15px 15px 0 0;
 }
 
-main #extra header h3{
+main aside header h3{
     margin: 0;
 }
 
